@@ -1,0 +1,55 @@
+<article class="question">
+	<div class="questioncontent">
+		<a class="questiontitle" href="/q/{{_id}}">
+		{{title}}
+		</a>
+		<br></br>
+		{{#if showanswers}}
+			<br> </br>
+			<div class="questiontext">
+			{{breaklines text}}
+			</div>
+			<br> </br>
+		{{else}}
+			<div hidden class="questiontext">
+			{{breaklines text}}
+			</div>
+		{{/if}}
+		{{#if showanswers}}
+		<button type="button" class="windowanswer" data-question-id="{{_id}}">Answer</button>
+		<br></br>
+		{{/if}}
+		<div class="tag">
+			<span class="tagprefix">Tags:</span>
+			<span class="taglist">
+				{{#each tags}}
+					{{#if this}}
+					<span class="tagtext">
+						<button type="button" class="taglink">{{this}}</button>
+					</span>
+					{{/if}}
+				{{/each}}
+			</span>
+		</div>
+		<br><br>
+		<span class="questionauthor">
+			{{username}}
+		</span>
+		{{#unless showanswers}}
+			{{#notEmpty answers}}
+				<span class="answeredstatus"> {{arrayLength answers}} answers </span>
+			{{else}}
+				<span class="answeredstatus"> Unanswered </span>
+			{{/notEmpty}}
+		{{/unless}}
+	</div>
+</article>
+{{#if showanswers}}
+	<div class="answers">
+		{{#each answers}}
+			{{#if this}}
+				{{> replies this}}
+			{{/if}}
+		{{/each}}
+	</div>
+{{/if}}
