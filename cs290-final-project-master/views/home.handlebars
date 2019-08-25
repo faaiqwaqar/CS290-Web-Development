@@ -1,0 +1,51 @@
+      <main class="questionbox">
+
+      <article class="staticquestion">
+          <div class="questioncontent">
+          <p class="questiontext">
+            Welcome to Pizza!
+          </p>
+          <p class="questionauthor">
+            The Pizza Team
+          </p>
+
+
+		<article class="tag">
+		<div class="tagcontent">
+		<p class="tagprefix">
+		Tags:
+		</p>
+		<p class="tagtext">
+		<button type="button" class="taglink">welcome</button>
+		</p>
+		</div>
+		</article>
+		<hr>
+		<article class="reply">
+		<div class="replycontent">
+		<p class="replytext">
+			Login or create an account to start asking questions.
+		</p>
+		<p class="replyauthor">
+			The Pizza Team
+		</p>
+		</div>
+		</article>
+		</div>
+
+      </article>
+	  
+	  <div id='questionholder'>
+
+			{{#each this}}
+				{{#if author}}
+					{{> question this}}
+				{{/if}}
+			{{/each}}
+
+		</div>
+
+    </main>
+
+</div>
+
