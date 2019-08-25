@@ -1,0 +1,161 @@
+/*
+ * Add your CSS styles to this file.
+ */
+
+body{
+   font-family: Roboto;
+   margin: 0;
+   padding: 0;
+   background-color: #eaebed;
+ }
+
+a{
+  color: black;
+}
+
+a:hover{
+  color:#38A1F3;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+#create-twit-button:hover{
+  background-color: #38A1F3;
+  transform: scale(1.2);
+}
+
+#create-twit-button i{
+  color: #ffffff;
+  transform: scale(1.8);
+}
+
+#create-twit-button{
+  display: block;
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 0;
+  border: 0;
+  box-shadow: 3px 3px 3px #cfcfd1;
+}
+
+#navbar-search-button{
+  position: relative;
+  background-color: #ffffff;
+  padding: 0;
+  border: 0;
+  top: 4px;
+  }
+
+#navbar-search-button:hover{
+  color: #38A1F3;
+}
+
+#navbar-search-input{
+  position: relative;
+  font-size: 13px;
+  font-weight: bolder;
+  border-radius: 5%;
+  background-color: #eaebed;
+  padding: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cfcfd1;
+  height: 25px;
+  width: 150px;
+  top: 4px;
+}
+
+#navbar-search-input:focus{
+  background-color: #ffffff;
+}
+
+.navbar{
+  height: 34px;
+  background-color: #ffffff;
+}
+
+.navitem.navbar-search{
+  position: absolute;
+  right: 25px;
+}
+
+.navlist{
+  list-style: none;
+  margin: 0px;
+}
+
+.navlist li{
+  position: relative;
+  float: left;
+  font-size: 14px;
+  right: 20px;
+}
+
+.navitem.navlink{
+  padding: 10px;
+}
+
+.navitem.navlink.active{
+  padding-bottom: 6px;
+  border-bottom: solid;
+  border-width: 3px;
+  border-color: #38A1F3;
+}
+
+.site-title{
+  background-color: #38A1F3;
+  color: #ffffff;
+  font-weight: 375;
+  padding: 10px 15px;
+  margin: 0px;
+}
+
+.twit{
+  background-color: #ffffff;
+  width: 375px;
+  height: 100px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #cfcfd1;
+  padding: 5px;
+  margin: 2px;
+}
+
+.twit-author{
+  position: relative;
+  font-weight: bold;
+  float: right;
+  bottom: 25px;
+  right: 20px;
+}
+
+.twit-container{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  top: 100px;
+  right: 45px;
+}
+
+.twit-icon{
+  position: relative;
+  transform: scale(1.3);
+  left: 70px;
+  top: 10px;
+}
+
+.twit-text{
+  position: relative;
+  height: 20px;
+  width: 300px;
+  left: 45px;
+  bottom: 28px;
+}
